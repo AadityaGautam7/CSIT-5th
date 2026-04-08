@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+    <body>
+    <h2>Student Info</h2>
+    <p id="output"></p>
+    <script>
+
+        fetch("student.json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("output").innerHTML =
+                "Name: " + data.name + "<br>" +
+
+                "Age: " + data.age + "<br>" +
+
+                "Course: " + data.course + "<br>" +
+
+                "Skills: " + data.skills.join(", ");
+
+        })
+        .catch(error => console.log("Error:", error));
+        </script>
+    </body>
+</html>

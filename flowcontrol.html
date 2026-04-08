@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Control in JavaScript</title>
+</head>
+<body>
+    <script>
+        var x = parseInt(prompt("Enter a number : "));
+        // One way branching (if statement)
+        // if (x >= 40) {
+        //     document.write("You have passed the exam.");
+        // }
+
+        // Two way branching (if-else statement)
+        // if (x % 2 == 0) {
+        //     document.write(x + " is an Even Number");
+        // }
+        // else {
+        //     document.write(x + " is an Odd Number");
+        // }
+
+        // Multi way branching (if-else if-else statement)
+        if (x >= 90) {
+            document.write("Grade A");
+        }
+        else if (x >= 75) {
+            document.write("Grade B");
+        }
+        else if (x >= 60) {
+            document.write("Grade C");
+        }
+        else if (x >= 40) {
+            document.write("Grade D");
+        }
+        else {
+            document.write("Grade F");
+        }
+    </script>
+</body>
+
+</html>

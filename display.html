@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Display types in CSS */
+        .block { /* This element takes the full width available */
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .inline {   /* This element takes only the width of its content */
+            display: inline;
+            background-color: lightgreen;
+            margin-right: 10px;
+        }
+
+        .inline-block { /* This element behaves like inline but allows setting width and height */
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            margin-right: 10px;
+        }
+
+        .none { /* This element is not displayed */
+            display: none;
+        }
+
+        .hidden {   /* This element is hidden but still takes up space */
+            visibility: hidden;
+        }
+
+        .visible {  /* This element is visible */
+            visibility: visible;
+            background-color: lightgray;
+        }
+
+        b {
+            border: 2px solid black;
+            color: red;
+            color: #00FF00;
+            color: rgb(14, 164, 203);
+            border-style: dashed;
+            border-width: 4px;
+            border-color: blue;
+        }
+    </style>
+    <body>
+        <div class="block">This is a block-level element.</div>
+        <br>
+        <span class="inline">This is an inline element.</span>
+        <span class="inline">This is another inline element.</span>
+        <br><br>
+        <div class="inline-block">This is an inline-block element.</div>
+        <div class="inline-block">This is another inline-block element.</div>
+
+        <div class="none">This element is not displayed (display: none).</div>
+        <div class="hidden">This element is hidden (visibility: hidden).</div>
+        <div class="visible">This element is visible (visibility: visible).</div>
+        <br><br>
+
+        <b>This is a paragraph.</b>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+    XML Schema
+
+    It describes the structure of an XML document.
+
+    The XML Schema language is also referred to as XML Schema
+    Definition (XSD)
+
+    It defines the legal building blocks of an XML document
+
+    It is an XML-based alternative to DTD.
+-->
+<xml version="1.0">
+
+<class>
+
+    <student>
+
+        <name>Prashant</name>
+
+        <address>Bhaktapur</address>
+
+        <age>30</age>
+
+    </student>
+
+</class>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="class">
+
+    <xs:complexType>
+
+    <xs:sequence>
+
+    <xs:element name="student">
+
+    <xs:complexType>
+
+    <xs:sequence>
+
+    <xs:element name="name" type="xs:string"/>
+
+    <xs:element name="address" type="xs:string"/>
+
+    <xs:element name="age" type="xs:int"/>
+
+</xs:sequence>
+
+</xs:complexType>
+
+</xs:element>
+
+</xs:sequence>
+
+</xs:complexType>
+
+</xs:element>
+
+</xs:schema>

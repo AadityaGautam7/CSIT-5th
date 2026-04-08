@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes in JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Popup Boxes Example</h1>
+    <br>
+    <button onclick="myclick()">Click Here</button>
+    <br><br>
+    <button onclick="myfun()">Click Here</button>
+    <p id="conf"></p>
+    <br><br>
+    <p id="demo"></p>
+
+    <script>
+        // Alert Box
+        function myclick() {   
+            alert("I am clicked");
+        }
+
+        // Confirm Box
+        function myfun() {
+            var result;
+            var r = confirm("Select an Action!");
+
+            if (r == true) {
+                result = "You have selected OK!";
+            }
+            else {
+                result = "You have selected Cancelled!";
+            }
+            document.getElementById("conf").innerHTML = result;
+        }
+
+        // Prompt Box
+            // Create an object:
+        const car = {type:"Konigsegg", model:"CCGT", color:"White"};
+            // Display some data from the object:
+        document.getElementById("demo").innerHTML = "The car type is " + car.type + ", the model is " + car.model + " and the color is " + car.color + ".";
+    </script>
+</html>

@@ -1,0 +1,85 @@
+<!-- CSS: Stands for Cascading stylesheet
+It is used to style the HTML elements in a web page.
+For example, changing colors, fonts, layouts, etc.
+There are 3 ways to apply CSS to HTML elements:
+
+1. Inline CSS: It is used to apply a unique style to a single HTML element.
+   It is done using the "style" attribute inside the HTML tag.
+   Example: <h1 style="color:blue; text-align:center;">This is a heading</h1>
+
+2. Internal CSS: It is used to define a style for a single HTML page.
+   It is done using the <style> element inside the <head> section.
+    Example:
+    <head>
+         <style>
+              h1 {
+                color: blue;
+                text-align: center;
+              }
+         </style>
+    </head>
+
+3. External CSS: It is used to define the style for multiple HTML pages.
+   It is done using an external CSS file with a .css extension.
+   The external CSS file is linked to the HTML file using the <link> element inside the <head> section.
+   Example:
+   In HTML file:
+   <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+   In styles.css file:
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+-->
+
+<!-- 
+   CSS Selector Types:
+   1. Element Selector: Selects HTML elements based on their names.
+        Example: h1 { color: blue; }
+
+    2. Class Selector: Selects HTML elements based on their class attribute.
+        Example: .classname { color: red; }
+
+    3. ID Selector: Selects a single HTML element based on its ID attribute.
+        Example: #idname { color: green; }
+
+    4. Universal Selector: Selects all HTML elements on the page.
+        Example: * { margin: 0; padding: 0; }
+    
+    5. Grouping Selector: Selects multiple HTML elements and applies the same style to them.
+        Example: h1, h2, p { color: purple; }
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <head>
+        <title>Inline CSS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph with inline CSS.</p>
+        <b>This is bold text with inline CSS.</b>
+    </body> 
+    -->
+
+    <!-- <head>
+    <title>External CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="head">This is a heading</h1>
+        <p id="para">This is a paragraph with external CSS.</p>
+        <b id="bold">This is bold text with external CSS.</b>
+    </body> -->
+
+    <head>
+    <title>Universal CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="head">This is a heading</h1>
+        <p id="para">This is a paragraph with universal CSS.</p>
+        <b id="bold">This is bold text with universal CSS.</b>
+</html>

@@ -1,0 +1,17 @@
+<!-- <person gender="male">
+
+<firstname>David</firstname>
+
+<lastname>Smith</lastname>
+
+</person> -->
+
+<person>
+
+<gender>male</gender>
+
+<firstname>David</firstname>
+
+<lastname>Smith</lastname>
+
+</person>
